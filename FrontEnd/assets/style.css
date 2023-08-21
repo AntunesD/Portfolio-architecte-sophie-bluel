@@ -198,6 +198,10 @@ nav a:hover {
 	color: #B1663C;
 }
 
+nav img {
+	height: 22px;
+}
+
 .page-active {
 	font-weight: bold;
 }
@@ -372,10 +376,10 @@ footer {
 .connexion label {
 	margin-bottom: 6px;
 	font-weight: bold;
+	margin-top: 30px;
 }
 
 .connexion input {
-margin-bottom: 30px;
 border: none;
 width: 379px;
 height: 51px;
@@ -390,5 +394,60 @@ box-shadow:
 
 .connexion a {
 	color: black;
+	font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/*Mode Users*/
+
+.Header-edition {
+	background-color: black;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 59px;
+	width: 100%;
+	font-family: 'Work Sans';
+}
+
+.Header-edition i {
+	margin: 10px;
+}
+
+.Header-edition button {
+	margin: 0 21px;
+	border-radius: 60px;
+	height: 38px;
+	background-color: white;
+	padding: 0 23px;
+	font-family: 'Work Sans';
+}
+
+#portfolio h2 {
+	display: flex;
+	align-items:center ;
+	justify-content: center;
+}
+
+#portfolio h2 a {
+	position: relative;
+	font-size: 16px;
+	left: 20px;
+	color: black;
+	font-family: 'Work Sans';
+}
+
+#introduction a  {
+	display: block;
+	margin: auto;
+	width: 80%;
+	font-family: 'Work Sans';
+	margin-top: 15px;
 	font-weight: bold;
 }
