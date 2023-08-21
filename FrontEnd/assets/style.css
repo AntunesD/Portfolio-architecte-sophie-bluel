@@ -187,9 +187,21 @@ nav li {
 	font-size: 1.2em;
 }
 
-li:hover {
+/*modif sur le header*/
+
+nav a {
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover {
 	color: #B1663C;
 }
+
+.page-active {
+	font-weight: bold;
+}
+/** */
 
 #introduction {
 	display: flex;
@@ -273,7 +285,7 @@ li:hover {
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 }
 
-input[type="submit"] {
+input[type="submit"], .connexion button {
 	font-family: 'Syne';
 	font-weight: 700;
 	color: white;
@@ -291,6 +303,24 @@ footer nav ul {
 }
 
 /***rajout css ***/
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #fffef8;
+}
+
+footer {
+	background-color: #ffffff;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-top: auto;
+}
 
 #portfolio ul {
 	display: flex;
@@ -317,4 +347,48 @@ footer nav ul {
 .li-active {
 	color: white;
 	background-color: #1D6154;
+}
+
+/*page de connexion*/
+
+
+.connexion {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 100px;
+}
+
+.connexion form {
+	display: flex;
+	flex-direction: column;
+}
+
+.connexion h2 {
+	margin: 37px;
+}
+
+.connexion label {
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.connexion input {
+margin-bottom: 30px;
+border: none;
+width: 379px;
+height: 51px;
+box-shadow:
+  0px 4px 14px rgba(0, 0, 0, 0.09)
+;
+}
+
+.connexion button {
+	padding: 10px 0;
+}
+
+.connexion a {
+	color: black;
+	font-weight: bold;
 }
