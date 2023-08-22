@@ -12,16 +12,30 @@
 	<meta name="description" content="">
 	<script src="https://kit.fontawesome.com/b611424e9b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./assets/style.css">
-	<script src="./assets/script.js"></script>
-	<script src="./assets/script-user.js"></script>
+	<script src="./assets/script/fonction-general.js"></script>
+	<script src="./assets/script/function-MAJ-user-accueil.js"></script>
+	<script src="./assets/script/script.js"></script>
+	<script src="./assets/script/localStorage.js"></script>
+	<script src="./assets/script/modal.js"></script>
 </head>
 
 <body>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2>Galerie Photo</h2>
+			<ul class="edit-gallery"></ul>
+			<button class="btn-type">Ajouter une photo</button>
+			<a>Supprimer la galerie</a>
+		</div>
+	</div>
+
 	<header>
 		<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
 		<nav>
 			<ul>
-				<li><a class="page-active" href="./index.html">projets</a></li>
+				<li><a class="page-active" href="#portfolio">projets</a></li>
 				<li><a href="#contact">contact</a></li>
 				<li><a id="login" href="./assets/Pages/connexion.html">login</a></li>
 				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>

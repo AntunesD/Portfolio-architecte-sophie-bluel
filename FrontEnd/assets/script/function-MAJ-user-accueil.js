@@ -1,22 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
-    const token = localStorage.getItem('Token')
+/***Ce script s'occupe de la connexion de l'utilisateur***/
 
-
-    console.log("l'ulisateur est il connecté ?", isLoggedIn);
-console.log("Le token est:", token);
-
-    if (isLoggedIn) {
-        logout()
-        headerEdition()
-        profilImg()
-        editWorks()
-        deleteFilter()
-    }
-});
 
 //Fonction header mode edition 
-
 
 function headerEdition() {
     // Créer un nouvel élément div
@@ -52,20 +37,21 @@ function logout() {
 
 function profilImg() {
     const figure = document.querySelector('#introduction figure');
-modifier = document.createElement("a");
-modifier.innerHTML = `<i class="fa-regular fa-pen-to-square"></i>Modifier`
+    modifier = document.createElement("a");
+    modifier.innerHTML = `<i class="fa-regular fa-pen-to-square"></i>Modifier`
 
-figure.appendChild(modifier)
+    figure.appendChild(modifier)
 
 };
 
 //Fonction modifier projet 
 
-function editWorks(){
-const title = document.querySelector("#portfolio h2")
-modifier = document.createElement("a");
-modifier.innerHTML = `<i class="fa-regular fa-pen-to-square"></i>Modifier`
-title.appendChild(modifier)
+function modifWorks() {
+    const title = document.querySelector("#portfolio h2")
+    modifier = document.createElement("a");
+    modifier.id = "openModalBtn"
+    modifier.innerHTML = `<i class="fa-regular fa-pen-to-square"></i>Modifier`
+    title.appendChild(modifier)
 }
 
 //fonction suprimer les buttons filtre
